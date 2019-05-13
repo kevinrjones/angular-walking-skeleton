@@ -1,0 +1,15 @@
+<table class='table bordered-table table-striped'>
+
+  <thead class='thead-dark'>
+    <th scope='col'>Name</th>
+    <th scope='col'>Score</th>
+  </thead>
+  <tbody>
+    <tr *ngFor='let user of users'>
+      <td>
+        <a href='#' routerLink="/expenses/{{user.id}}">{{user.name}}</a>
+      </td>
+      <td> {{user.score}}</td>
+    </tr>
+  </tbody>
+</table>

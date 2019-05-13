@@ -1,0 +1,23 @@
+<h2>Current Table</h2>
+
+<div class='row'>
+    <div class='col-md-8 col-sm-12'>
+        <app-user-list 
+          [users]="users$ | async">
+        </app-user-list>
+      </div>
+        <!-- <div class='col-md-4'>
+    <h4>Summary</h4>
+    <div id='totalClaimed'>
+      Total Claimed:
+      <span>{{summary?.currency}} {{summary?.totalClaimed}}</span>
+    </div>
+    <div id='totalPaid'>
+      Total Paid:
+      <span>{{summary?.currency}} {{summary?.totalPaid}}</span>
+    </div>
+  </div> -->
+</div>
+<div class="claimActions">
+  <!-- <button class="btn btn-outline-primary" (click)=newClaim()>New Claim</button> -->
+</div>
