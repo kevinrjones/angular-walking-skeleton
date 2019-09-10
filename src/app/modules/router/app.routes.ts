@@ -6,11 +6,11 @@ import { PageNotFoundComponent } from '@app/modules/shared/components/page-not-f
 export const routes: Routes = [
     {
         path: 'home',
-        loadChildren: '@app/modules/home/home.module#HomeModule'
+        loadChildren: () => import('@app/modules/home/home.module').then(m => m.HomeModule)
     },
     {
         path: 'users',
-        loadChildren: '@app/modules/user/user.module#UserModule'
+        loadChildren: () => import('@app/modules/user/user.module').then(m => m.UserModule)
     },
     {
         path: '',

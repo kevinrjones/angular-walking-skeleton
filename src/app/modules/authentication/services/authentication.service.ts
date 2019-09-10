@@ -14,7 +14,7 @@ export function getClientSettings(): UserManagerSettings {
     redirect_uri: environment.authRedirectUrl, // client's redirect URI
     post_logout_redirect_uri: environment.postLogoutRedirectUrl,
     response_type: environment.responseType, // 'id_token token',
-    scope: environment.scope, // 'openid profile api1', 
+    scope: environment.scope, // 'openid profile api1',
     filterProtocolClaims: true,
     loadUserInfo: true
   };

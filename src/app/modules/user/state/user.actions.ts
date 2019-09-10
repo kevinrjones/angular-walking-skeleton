@@ -1,7 +1,7 @@
 import { User } from '@app/models/user';
 
-export const LOAD_USER = '[User] LOAD USER;'
-export const LOAD_USER_SUCCESS = '[User] LOAD USER_SUCCESS;'
+export const LOAD_USER = '[User] LOAD USER';
+export const LOAD_USER_SUCCESS = '[User] LOAD USER_SUCCESS';
 
 export class LoadUsersAction {
     readonly type = LOAD_USER;

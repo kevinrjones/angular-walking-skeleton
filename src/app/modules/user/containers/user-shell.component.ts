@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AppState } from '@app/models/app-state';
 import { User } from '@app/models/user';
-import * as userActions from "@app/modules/user/state/user.actions";
+import * as userActions from '@app/modules/user/state/user.actions';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 
@@ -12,10 +12,10 @@ import { Observable } from 'rxjs';
 })
 export class UserComponent implements OnInit {
 
-  users$: Observable<User[]>
+  users$: Observable<User[]>;
 
-  constructor(private store: Store<AppState>) { 
-    this.users$ = this.store.select(state => state.users)
+  constructor(private store: Store<AppState>) {
+    this.users$ = this.store.select(state => state.users);
   }
 
   ngOnInit() {
@@ -23,6 +23,6 @@ export class UserComponent implements OnInit {
   }
 
   getUsers() {
-    this.store.dispatch(new userActions.LoadUsersAction())
+    this.store.dispatch(new userActions.LoadUsersAction());
   }
 }

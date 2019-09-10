@@ -14,7 +14,7 @@ import { userRoutes } from './user.routes';
   imports: [
     SharedModule, RouterModule.forChild(userRoutes),
     StoreModule.forFeature('users', userReducer),
-    EffectsModule.forFeature([UserEffects]) 
+    EffectsModule.forFeature([UserEffects])
   ]
 })
 export class UserModule { }
